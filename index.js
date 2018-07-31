@@ -13,3 +13,13 @@ bot.on('message', (message) => {
 });
 
 bot.login('NDczNjQ2MTgwNTIyNTI0Njcy.DkE-GQ.9L864jyCIMQ3vZJbcgCPuNBM430');
+
+var blizznews = window.open('https://news.blizzard.com/en-us', 'Blizzard News')
+blizznews.onload = function() {
+    var patch = [], l = blizznews.document.links;
+    for(var i=0; i<l.length; i++) {
+        if (l.includes('patch') || l.includes('hotfix')) {
+            patch.push(l[i].href);
+        }
+    }
+}
