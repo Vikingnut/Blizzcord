@@ -12,7 +12,7 @@ bot.on('message', (message) => {
     }
 });
 
-bot.login('NDczNjQ2MTgwNTIyNTI0Njcy.DkE-GQ.9L864jyCIMQ3vZJbcgCPuNBM430');
+bot.login('');
 
 var blizznews = window.open('https://news.blizzard.com/en-us', 'Blizzard News')
 blizznews.onload = function() {
